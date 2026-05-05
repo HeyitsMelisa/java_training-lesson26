@@ -116,12 +116,17 @@ import java.util.List;
 enum Priority {
     // TODO:
     // Define the enum values:
-    // LOW
-    // MEDIUM
-    // HIGH
+     LOW,
+     MEDIUM,
+     HIGH
+   
 }
 
 class Task {
+   private String title;
+   private String description;
+   private Priority priortity;
+   private LocalDate dueDate;
 
     // TODO:
     // Define all required attributes
@@ -130,10 +135,14 @@ class Task {
         // TODO:
         // Validate input
         // Initialize attributes
+       this.title=title;
+       this.description=description;
+       this.priority=priority;
+       this.dueDate=dueDate;
     }
 
     public String getTitle() {
-        // TODO:
+        
         return null;
     }
 
